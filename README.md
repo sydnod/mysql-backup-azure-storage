@@ -32,7 +32,7 @@ This is a Docker image that will perform a backup of a remote MySQL database ser
 
 ```docker
 docker run -it --rm \
-  --env SOURCE_TYPE: "mysql" \
+  --env SOURCE_TYPE="mysql" \
   --env SOURCE_NAME="" \
   --env SOURCE_HOSTNAME="" \
   --env SOURCE_USERNAME="" \
@@ -150,9 +150,10 @@ spec:
                       key: INTEGRATION_HEALTHCHECKSIO_URL
 ```
 
-
 ## Output
+
 Exmaple output
+
 ```
 SCRIPT: Start
 
@@ -172,3 +173,9 @@ Creating destination container...done
 Uploading the file to Azure storage...
 Finished[#############################################################]  100.0000%
 ```
+
+## Other
+
+### Backup
+
+- [`sydnod/postgres-backup-azure-storage`](https://github.com/sydnod/postgres-backup-azure-storage)
