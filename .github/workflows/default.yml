@@ -1,16 +1,10 @@
-# Force redeploy
-
-name: "mysql-backup-azure-storage"
+name: "default"
 
 on:
   push:
     branches:
       - main
       - dev
-
-    paths:
-      - ".github/workflows/default"
-      - "namespace/sydnod-ops-mysql/backup/**"
 
 env:
   # Container Registry
